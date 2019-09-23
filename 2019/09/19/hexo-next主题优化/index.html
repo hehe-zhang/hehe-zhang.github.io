@@ -63,16 +63,16 @@
 <meta property="og:site_name" content="班卡の博客">
 <meta property="og:description" content="摘要本文介绍Hexo博客环境搭建、安装Next主题及美化">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2267589-f40b21a6ccbebefa.png?imageMogr2/auto-orient/strip%7CimageView2/2">
-<meta property="og:image" content="https://blogdata-1258545379.cos.ap-shanghai.myqcloud.com/20190124/1548273942824.png">
-<meta property="og:image" content="http://yoursite.com/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1569199315932.png">
-<meta property="og:image" content="http://yoursite.com/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1569199516841.png">
-<meta property="og:image" content="http://yoursite.com/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1569200749519.png">
-<meta property="og:updated_time" content="2019-09-23T02:23:03.230Z">
+<meta property="og:image" content="http://yoursite.com/2019/09/19/hexo-next主题优化/2267589-f40b21a6ccbebefa.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/19/hexo-next主题优化/1548273942824.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/19/hexo-next主题优化/1569199315932.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/19/hexo-next主题优化/1569199516841.png">
+<meta property="og:image" content="http://yoursite.com/2019/09/19/hexo-next主题优化/1569200749519.png">
+<meta property="og:updated_time" content="2019-09-23T02:53:51.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo-next主题优化">
 <meta name="twitter:description" content="摘要本文介绍Hexo博客环境搭建、安装Next主题及美化">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/2267589-f40b21a6ccbebefa.png?imageMogr2/auto-orient/strip%7CimageView2/2">
+<meta name="twitter:image" content="http://yoursite.com/2019/09/19/hexo-next主题优化/2267589-f40b21a6ccbebefa.png">
   <link rel="canonical" href="http://yoursite.com/2019/09/19/hexo-next主题优化/">
 
 
@@ -297,7 +297,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-09-23 10:23:03" itemprop="dateModified" datetime="2019-09-23T10:23:03+08:00">2019-09-23</time>
+                <time title="修改时间：2019-09-23 10:53:51" itemprop="dateModified" datetime="2019-09-23T10:53:51+08:00">2019-09-23</time>
               </span>
             
           
@@ -354,7 +354,7 @@
 
 <h2 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1.环境准备"></a>1.环境准备</h2><h3 id="1-1Node安装"><a href="#1-1Node安装" class="headerlink" title="1.1Node安装"></a>1.1Node安装</h3><p>因为Hexo这个博客框架是基于NodeJs的，所以我们必须先安装NodeJS环境才能在后面使用我们的Hexo来搭建博客。</p>
 <p>Windows环境，在<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">node官网</a>下载LTS版本的Node.js，选择偶数版本下载（偶数是长期稳定版本，有较好的兼容性），安装时选择Add to PATH选项，将node命令添加到系统环境变量。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/2267589-f40b21a6ccbebefa.png?imageMogr2/auto-orient/strip%7CimageView2/2" alt="img"></p>
+<p><img src="/2019/09/19/hexo-next主题优化/2267589-f40b21a6ccbebefa.png" alt="2267589-f40b21a6ccbebefa.png"></p>
 <p>Win + R , 输入cmd ，打开dos命令行，输入 <code>node -v</code> 查看NodeJS版本号，显示npm版本表示node安装成功</p>
 <p>由于在使用npm安装时会用到国外的资源，访问会很慢，故添加<a href="https://npm.taobao.org/" target="_blank" rel="noopener">淘宝 NPM 镜像</a></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
@@ -443,7 +443,7 @@
 <figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 文章内链接文本样式</span></span><br><span class="line"><span class="selector-class">.post-body</span> <span class="selector-tag">p</span> <span class="selector-tag">a</span>&#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#0593d3</span>;</span><br><span class="line">  <span class="attribute">border-bottom</span>: none;</span><br><span class="line">  <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#0593d3</span>;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#fc6423</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: none;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid <span class="number">#fc6423</span>;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="2-9修改标签样式"><a href="#2-9修改标签样式" class="headerlink" title="2.9修改标签样式"></a>2.9修改标签样式</h3><p>博客底部的标签样式默认为<code>#tag</code>，我们可以将其改成：</p>
-<p><img src="https://blogdata-1258545379.cos.ap-shanghai.myqcloud.com/20190124/1548273942824.png" alt="1548273942824"></p>
+<p><img src="/2019/09/19/hexo-next主题优化/1548273942824.png" alt="1548273942824"></p>
 <p>只需要修改模板<code>/themes/next/layout/_macro/post.swig</code>中</p>
 <figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"</span></span></span><span class="template-variable">&#123;&#123; url_for(tag.path) &#125;&#125;</span><span class="xml"><span class="tag"><span class="string">"</span> <span class="attr">rel</span>=<span class="string">"tag"</span>&gt;</span></span><span class="template-variable">&#123;&#123; tag_indicate &#125;&#125;</span><span class="xml"> </span><span class="template-variable">&#123;&#123; tag.name &#125;&#125;</span><span class="xml"><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 
@@ -469,13 +469,13 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true #是否启用资源文件夹（用来存放相对路径图片或文件）</span><br></pre></td></tr></table></figure>
 
 <p>根目录执行下面命令</p>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-asset-<span class="built_in">image</span> --<span class="built_in">save</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
 
 <p>在根目录使用如下命令创建博客时，会在_post目录下看到一个与博客同名的文件夹</p>
 <h2 id="3部署GitHub"><a href="#3部署GitHub" class="headerlink" title="3部署GitHub"></a>3部署GitHub</h2><h3 id="3-1申请git账号"><a href="#3-1申请git账号" class="headerlink" title="3.1申请git账号"></a>3.1申请git账号</h3><p>进入GitHub官网，注册账号（用户名比较重要，如我的用户名为hehe-zhang，则博客访问地址为<a href="https://hehe-zhang.github.io/" target="_blank" rel="noopener">https://hehe-zhang.github.io/</a> ），选择New repository</p>
-<p><img src="/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1569199315932.png" alt="1569199315932"></p>
+<p><img src="/2019/09/19/hexo-next主题优化/1569199315932.png" alt="1569199315932"></p>
 <p>项目名为：用户名.github.io，必须使用这个格式</p>
-<p><img src="/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1569199516841.png" alt="1569199516841"></p>
+<p><img src="/2019/09/19/hexo-next主题优化/1569199516841.png" alt="1569199516841"></p>
 <h3 id="3-2Hexo配置git"><a href="#3-2Hexo配置git" class="headerlink" title="3.2Hexo配置git"></a>3.2Hexo配置git</h3><p>修改配置文件blog/_config.yml中deploy为git部署</p>
 <figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repo:</span> 你的git目录（刚创建的）</span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
 
@@ -486,7 +486,7 @@
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C "邮件地址"</span><br></pre></td></tr></table></figure>
 
 <p>然后连续3次回车，最终会生成一个文件在用户目录下，打开用户目录，找到<code>.ssh\id_rsa.pub</code>文件，记事本打开并复制里面的内容，打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：</p>
-<p><img src="/hexo-next%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/1569200749519.png" alt="1569200749519"></p>
+<p><img src="/2019/09/19/hexo-next主题优化/1569200749519.png" alt="1569200749519"></p>
 <p>安装git插件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
@@ -559,22 +559,6 @@
 
 
         
-          <div class="post-nav">
-            <div class="post-nav-next post-nav-item">
-              
-                <a href="/2019/09/19/hello-world/" rel="next" title="Hello World">
-                  <i class="fa fa-chevron-left"></i> Hello World
-                </a>
-              
-            </div>
-
-            <span class="post-nav-divider"></span>
-
-            <div class="post-nav-prev post-nav-item">
-              
-            </div>
-          </div>
-        
       </footer>
     
   </div>
@@ -634,7 +618,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -730,7 +714,7 @@
       <span class="post-meta-item-text">站点总字数：</span>
     
 	<span title="post.totalcount">
-     4.3k字 </span>
+     4.2k字 </span>
     <!--<span title="站点总字数"></span>-->
   
 </div>
